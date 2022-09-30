@@ -23,4 +23,7 @@ public class SaucedemoPage {
 
     @FindBy(xpath = "//*[@class='product_sort_container']")
     public WebElement ddm;
+
+    @FindBy(xpath = "//div[@class='inventory_item_price']")
+    public List<WebElement> fiyatList;
 }

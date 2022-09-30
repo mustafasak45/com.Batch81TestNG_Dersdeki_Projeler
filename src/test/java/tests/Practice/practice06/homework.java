@@ -35,5 +35,7 @@ public class homework {
         Select select=new Select(saucedemoPage.ddm);
 
         select.selectByVisibleText("Price (low to high)");
+
+        System.out.println(saucedemoPage.fiyatList.stream().sorted().toString());
     }
 }
