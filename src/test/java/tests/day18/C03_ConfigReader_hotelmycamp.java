@@ -7,7 +7,7 @@ import pages.HmcPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C03_ConfigReader {
+public class C03_ConfigReader_hotelmycamp {
 
     @Test
     public void test1() {

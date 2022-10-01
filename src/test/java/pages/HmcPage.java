@@ -21,4 +21,11 @@ public class HmcPage {
 
     @FindBy(xpath = "//*[@class='username username-hide-on-mobile']")
     public WebElement girisPassed;
+
+    @FindBy(xpath = "//*[text()='Try again please']")
+    public WebElement girisYapilamadi;
+
+
+
+
 }
