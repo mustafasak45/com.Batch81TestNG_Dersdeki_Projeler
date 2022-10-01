@@ -1,8 +1,6 @@
-package tests.day19;
+package tests.day19_SignletonPattern_NegatifPozitifTest;
 
 import org.testng.annotations.Test;
-import utilities.ConfigReader;
-import utilities.Driver;
 
 public class C01_SignletonPattern {
     @Test

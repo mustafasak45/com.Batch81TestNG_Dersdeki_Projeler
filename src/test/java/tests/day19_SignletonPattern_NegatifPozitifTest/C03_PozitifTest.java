@@ -1,4 +1,4 @@
-package tests.day19;
+package tests.day19_SignletonPattern_NegatifPozitifTest;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
