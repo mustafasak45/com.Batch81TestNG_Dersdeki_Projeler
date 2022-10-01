@@ -1,7 +1,9 @@
 package tests.day20_SmokeTest;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HmcPage;
 import utilities.ConfigReader;
@@ -34,11 +36,31 @@ public class C03_E2ETest {
         Thread.sleep(1000);
         hmcPage.roomReservation.click();
         Thread.sleep(1000);
+        hmcPage.addRoom.click();
 
 //        Açılan sayfadaki tüm metin kutularına istediğiniz verileri girin.
-//        Save butonuna tıklayın.
-//        “RoomReservation was inserted successfully” textinin göründüğünü test edin.
-//        OK butonuna tıklayın.
+        Faker faker = new Faker();
+        hmcPage.idUser.sendKeys("manager");
+        actions.sendKeys(Keys.TAB).sendKeys("Happy Hotel").
+                sendKeys(Keys.TAB).sendKeys("1500").
+                sendKeys(Keys.TAB).sendKeys("10/02/2022").
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("2").
+                sendKeys(Keys.TAB).sendKeys("2").
+                sendKeys(Keys.TAB).sendKeys(faker.name().fullName()).
+                sendKeys(Keys.TAB).sendKeys(faker.phoneNumber().cellPhone()).
+                sendKeys(Keys.TAB).sendKeys(faker.internet().emailAddress()).
+                sendKeys(Keys.TAB).sendKeys("skajdlaksjdaasd").
+                sendKeys(Keys.TAB,Keys.SPACE,Keys.TAB,Keys.TAB,Keys.ENTER)
+                .perform();
+
+        //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
+        Thread.sleep(1000);
+        Assert.assertTrue(hmcPage.roomReservationText.isDisplayed());
+
+        //OK butonuna tıklayın.
+        hmcPage.okButton.click();
+
 
     }
 }

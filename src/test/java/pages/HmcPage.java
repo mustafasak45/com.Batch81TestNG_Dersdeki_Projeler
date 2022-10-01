@@ -31,5 +31,15 @@ public class HmcPage {
     @FindBy (xpath = "//*[@href='/admin/RoomReservationAdmin']")
     public WebElement roomReservation;
 
+    @FindBy(xpath = "//*[text()='Add Room Reservation ']")
+    public WebElement addRoom;
 
+    @FindBy(xpath = "//*[@id='IDUser']")
+    public WebElement idUser;
+
+    @FindBy(xpath = "//*[@class='bootbox-body']")
+    public WebElement roomReservationText;
+
+    @FindBy(xpath = "//*[text()='OK']")
+    public WebElement okButton;
 }
