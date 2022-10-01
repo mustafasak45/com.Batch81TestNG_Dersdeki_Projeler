@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <!--Buraya   https://testng.org/doc/documentation-main.html#testng-xml  adresinden aldık-->
+<suite name="istenen packageleri calistirma">
+
+      <!-- Package Testi -->
+    <test name="packageTesti">
+        <packages>
+            <package name="tests.day20_SmokeTest"/>
+        </packages>
+    </test>
+
+    <!-- Class Testi -->
+    <test name="classTesti">
+        <classes>
+            <class name="tests.day19_SignletonPattern_NegatifPozitifTest.C03_PozitifTest"/>
+        </classes>
+    </test>
+</suite>
+
+        <!-- CTRL+S Yapmayı unutma -->

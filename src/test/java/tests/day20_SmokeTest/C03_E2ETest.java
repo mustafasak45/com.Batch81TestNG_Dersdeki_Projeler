@@ -61,6 +61,8 @@ public class C03_E2ETest {
         //OK butonuna tıklayın.
         hmcPage.okButton.click();
 
+        Driver.closeDriver();
+
 
     }
 }

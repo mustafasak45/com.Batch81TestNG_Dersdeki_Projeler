@@ -8,7 +8,7 @@ public class C01_DependsOnMethods extends TestBaseBeforeMethodAfterMethod {
     //dependsOnMethods ile bir birine bağladığımız için Ignore oldu
     @Test
     public void test01() {
-        driver.get("https://Wasdfamazon.com");
+        driver.get("https://Wasdamazon.com");
     }
     @Test(dependsOnMethods = "test01")
     public void test02() {
