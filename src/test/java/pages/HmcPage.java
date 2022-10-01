@@ -25,7 +25,11 @@ public class HmcPage {
     @FindBy(xpath = "//*[text()='Try again please']")
     public WebElement girisYapilamadi;
 
+    @FindBy(xpath = "//*[text()='Hotel Management']")
+    public WebElement hotelManagement;
 
+    @FindBy (xpath = "//*[@href='/admin/RoomReservationAdmin']")
+    public WebElement roomReservation;
 
 
 }
