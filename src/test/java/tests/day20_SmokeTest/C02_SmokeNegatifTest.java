@@ -58,7 +58,7 @@ public class C02_SmokeNegatifTest {
     public void yanlisKullaniciSifre() {
 
 //        1 ) Bir Class olustur : NegativeTest
-//        2) Bir test method olustur NegativeLoginTest()
+//        2) Bir test method olustur  NegativeLoginTest()
 
 //        https://www.hotelmycamp.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));

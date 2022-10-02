@@ -1,4 +1,4 @@
-package tests.day18;
+package tests.day18_ConfigurationProperties;
 
 import org.testng.annotations.Test;
 import utilities.ConfigReader;

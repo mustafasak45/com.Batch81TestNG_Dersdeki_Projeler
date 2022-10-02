@@ -1,4 +1,4 @@
-package tests.day18;
+package tests.day18_ConfigurationProperties;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
