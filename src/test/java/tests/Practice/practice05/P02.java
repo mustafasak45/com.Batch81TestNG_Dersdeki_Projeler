@@ -16,7 +16,7 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
 // 5. Açılır pencereyi kabul edin
 
 
-    @Test
+    @Test(groups = "grup2")
     public void test1() {
 // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
         driver.get("http://webdriveruniversity.com/Popup-Alerts/index.html");

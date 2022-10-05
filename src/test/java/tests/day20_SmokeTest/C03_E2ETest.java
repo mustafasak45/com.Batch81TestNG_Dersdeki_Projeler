@@ -42,17 +42,14 @@ public class C03_E2ETest {
         Faker faker = new Faker();
         hmcPage.idUser.sendKeys("manager");
         actions.sendKeys(Keys.TAB).sendKeys("Happy Hotel").
-                sendKeys(Keys.TAB).sendKeys("1500").
-                sendKeys(Keys.TAB).sendKeys("10/02/2022").
-                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").
-                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("2").
-                sendKeys(Keys.TAB).sendKeys("2").
-                sendKeys(Keys.TAB).sendKeys(faker.name().fullName()).
-                sendKeys(Keys.TAB).sendKeys(faker.phoneNumber().cellPhone()).
-                sendKeys(Keys.TAB).sendKeys(faker.internet().emailAddress()).
-                sendKeys(Keys.TAB).sendKeys("skajdlaksjdaasd").
-                sendKeys(Keys.TAB,Keys.SPACE,Keys.TAB,Keys.TAB,Keys.ENTER)
-                .perform();
+                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/01/2022")
+                .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("2").sendKeys(Keys.TAB).sendKeys("2")
+                .sendKeys(Keys.TAB).sendKeys(faker.name().fullName()).sendKeys(Keys.TAB).
+                sendKeys(faker.phoneNumber().cellPhone()).sendKeys(Keys.TAB)
+                .sendKeys(faker.internet().emailAddress()).sendKeys(Keys.TAB).sendKeys("skajdlaksjdaasd")
+                .sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys(Keys.ENTER).perform();
 
         //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
         Thread.sleep(1000);

@@ -16,7 +16,7 @@ public class C01_PageClassFaceBookTest {
 //    giris yapilamadigini test edin
 
     FacebookPage facebookPage= new FacebookPage();
-    @Test
+    @Test(groups = "grup1")
     public void test1() {
         Driver.getDriver().get("https://www.facebook.com/");
     }

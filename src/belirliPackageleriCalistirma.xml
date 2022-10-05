@@ -1,6 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <!--Buraya   https://testng.org/doc/documentation-main.html#testng-xml  adresinden aldık-->
 <suite name="istenen packageleri calistirma">
-
       <!-- Package Testi -->
     <test name="packageTesti">
         <packages>

@@ -5,7 +5,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C02_ConfigurationProperties {
-    @Test
+    @Test(groups = "grup1")
     public void test1() throws InterruptedException {
         //Amazon sayfasına ve facebook sayfasına gidiniz
         String urlamzn = ConfigReader.getProperty("amznUrl");

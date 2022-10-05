@@ -76,5 +76,6 @@ public class C02_SmokeNegatifTest {
         Assert.assertTrue(hmcPage.girisYapilamadi.isDisplayed());
         //Sayfayı kapatınız
         Driver.closeDriver();
+
     }
 }

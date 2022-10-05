@@ -20,7 +20,6 @@ public class homework {
     public void test1() {
         Driver.getDriver().get(ConfigReader.getProperty("sauceUrl"));
     }
-
     @Test(dependsOnMethods = "test1",priority = 1)
     public void test2() {
         SaucedemoPage saucedemoPage= new SaucedemoPage();
