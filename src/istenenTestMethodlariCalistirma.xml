@@ -4,13 +4,13 @@
         <classes>
             <class name="tests.day16_Priority_DepensOnMethod_BeforeAfter.C03_Priority">
                 <methods>
-                    <include name="bestbuyTest"/>
+                    <include name="bestbuyTest"/>      <!--dahil etmektir sadece bu classdaki bu methodu çalıştırır -->
                 </methods>
             </class>
 
             <class name="tests.day16_Priority_DepensOnMethod_BeforeAfter.C02_BeforeClassAfterClass">
                 <methods>
-                    <exclude name="testamazonTesti"/>
+                    <exclude name="testamazonTesti"/>      <!--hariç tutmaktır bu classdaki bu notasyon dışında bütün classı çalıştırır-->
                 </methods>
             </class>
         </classes>

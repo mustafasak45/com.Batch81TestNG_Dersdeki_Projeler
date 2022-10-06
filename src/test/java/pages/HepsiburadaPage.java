@@ -19,7 +19,7 @@ public class HepsiburadaPage {
     @FindBy(xpath = "(//*[@href='https://www.hepsiburada.com/bilgisayarlar-c-2147483646'])[1]")
     public WebElement bilgisayarTablet;
 
-    @FindBy(xpath = "(//div[@class='sf-ChildMenuItems-OMxRJDk0466HYQpTli0P'])[1]//ul//li//ul//li//a//span")
+    @FindBy(xpath = "(//*[@class='sf-ChildMenuItems-OMxRJDk0466HYQpTli0P'])[1]//a")
     public List<WebElement> anaveAltBasliklar;
 
 }
