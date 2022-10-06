@@ -2,7 +2,7 @@
 <suite name="allTests" verbose="3" parallel="classes" thread-count="3">
     <test name="regresyon">
         <packages>
-            <package name="tests.day20_SmokeTest"/>
+            <package name="tests.*"/>
         </packages>
     </test>
 </suite>

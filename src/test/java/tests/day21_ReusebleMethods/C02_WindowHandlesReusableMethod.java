@@ -37,7 +37,9 @@ public class C02_WindowHandlesReusableMethod {
         Driver.getDriver().findElement(By.xpath("//*[text()='Click Here']")).click();
 
         // acilan yeni tab'in title'inin "New Window" oldugunu test edin
-        ReusableMethods.switchToWindow("New Window");
+        ReusableMethods.switchToWindow("New Window"); //titlesini yazdıgımız sayfaya gider
+        ReusableMethods.waitFor(3);         //belirtilen saniye kadar bekler
+
         String expectedTitle = "New Window";
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);

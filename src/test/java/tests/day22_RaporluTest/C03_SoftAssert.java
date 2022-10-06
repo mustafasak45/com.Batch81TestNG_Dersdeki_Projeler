@@ -38,7 +38,7 @@ public class C03_SoftAssert extends TestBaseCross {
         softAssert.assertTrue(sonuc.getText().contains("Nutella123"),"Nutella içermiyor");
 
         softAssert.assertAll();   // en son bu kodun yazılması gerkelidir UNUTMA!!!!
-                                  // Eğer girmezsek oluşan hatalrı bana vermez testi PASSED yapar.
+                                  // Eğer girmezsek oluşan hataları bana vermez testi PASSED yapar.
 
 
         //softassert içerisinde failed test oldugundan dolayı burası çalımazz

@@ -62,7 +62,7 @@ public class ReusableMethods {
                 return;
             }
         }
-        Driver.getDriver().switchTo().window(origin);
+        Driver.getDriver().switchTo().window(origin); //ana sayfaya geri döner
     }
 
 
