@@ -13,7 +13,7 @@ public class C05_AmazonPageClass {
         Driver.getDriver().get("https://amazon.com");
 
         amazonPage.aramaKutusu.sendKeys("Nutella", Keys.ENTER);
-        System.out.println(amazonPage.aramaSonucuElementi.getText());
+        System.out.println(amazonPage.aramaSonucWE.getText());
 
         Driver.closeDriver();
 

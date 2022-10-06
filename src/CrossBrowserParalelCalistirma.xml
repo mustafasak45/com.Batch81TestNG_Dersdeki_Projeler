@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <!--Buraya   https://testng.org/doc/documentation-main.html#testng-xml  adresinden aldık-->
+<suite name="Cross browser class caslistirma" parallel="tests" thread-count="2">
+
+    <test name="Cross browser Chrome test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.day22_RaporluTest.C02_HardAssert"/> <!--C02_HardAssert classını chrome ile calistirir-->
+        </classes>
+    </test>
+
+    <test name="Cross browser edge test">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.day22_RaporluTest.C03_SoftAssert"/> <!--C03_SoftAssert classını edge ile calistirir-->
+        </classes>
+    </test>
+
+</suite>

@@ -31,7 +31,7 @@ public class C01_ScreenShotReusableMethod {
         amznPage.aramaKutusu.sendKeys("Nutella", Keys.ENTER);
 
         //Arama sonuc yazısı Webelementinin resmini alınız
-       ReusableMethods.getScreenshotWebElement("AramaSonucWE",amznPage.aramaSonucuElementi);
+       ReusableMethods.getScreenshotWebElement("AramaSonucWE",amznPage.aramaSonucWE);
 
     }
 }
