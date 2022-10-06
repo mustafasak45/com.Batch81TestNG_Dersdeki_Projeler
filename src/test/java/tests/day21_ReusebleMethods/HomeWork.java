@@ -1,7 +1,5 @@
-package tests.day21;
+package tests.day21_ReusebleMethods;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pages.HepsiburadaPage;

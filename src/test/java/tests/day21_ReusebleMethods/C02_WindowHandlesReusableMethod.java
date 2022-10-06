@@ -1,4 +1,4 @@
-package tests.day21;
+package tests.day21_ReusebleMethods;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -7,7 +7,6 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class C02_WindowHandlesReusableMethod {
 

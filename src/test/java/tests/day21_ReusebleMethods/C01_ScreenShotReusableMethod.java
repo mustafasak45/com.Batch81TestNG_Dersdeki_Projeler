@@ -1,4 +1,4 @@
-package tests.day21;
+package tests.day21_ReusebleMethods;
 
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
