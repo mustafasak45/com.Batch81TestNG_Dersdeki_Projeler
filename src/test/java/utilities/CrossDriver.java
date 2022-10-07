@@ -13,7 +13,6 @@ public class CrossDriver {
     private CrossDriver(){
 
     }
-
     static WebDriver driver;
 
     public static WebDriver getDriver(String browser) {

@@ -15,13 +15,11 @@ public class C02_DataProvider {
         return new Object[][]{{"mustafa@gmail.com","12345"},{"sak@gmail.com,456545"},{"customer@bluerentalcars.com","12345"}};
     }
 
-
     //https://www.bluerentalcars.com/ adresine git
     //login butonuna bas
     //Data provider ile 3 farklı userEmail ve 3 farklı password girelim
     //login butonuna tiklayin
     //Degerleri girildiginde sayfaya basarili sekilde girilemedigini test et
-
 
     @Test(dataProvider = "aranacakKelimeler")
     public void test01(String userEmail,String password) {

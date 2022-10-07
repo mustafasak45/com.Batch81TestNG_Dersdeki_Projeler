@@ -42,7 +42,7 @@ public class C03_E2ETest {
         Faker faker = new Faker();
         hmcPage.idUser.sendKeys("manager");
         actions.sendKeys(Keys.TAB).sendKeys("Happy Hotel").
-                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/01/2022")
+                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/20/2022")
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("2").sendKeys(Keys.TAB).sendKeys("2")
                 .sendKeys(Keys.TAB).sendKeys(faker.name().fullName()).sendKeys(Keys.TAB).
