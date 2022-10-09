@@ -1,15 +1,13 @@
-package tests.day22_RaporluTest;
+package tests.day22_RaporluTest_CrossBrowser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.ReusableMethods;
 import utilities.TestBaseCross;
-import utilities.TestBase_BeforeClass_AfterClass;
 
-public class C03_SoftAssert extends TestBaseCross {
+public class C03_SoftAssert_CrossBrowser extends TestBaseCross {
     @Test
     public void test01() {
         //Açıklama: Assert'te hata oldugunda programın alt satırlarının da calışmasını engeller.

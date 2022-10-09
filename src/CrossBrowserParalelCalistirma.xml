@@ -4,14 +4,14 @@
     <test name="Cross browser Chrome test">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="tests.day22_RaporluTest.C02_HardAssert"/> <!--C02_HardAssert classını chrome ile calistirir-->
+            <class name="tests.day22_RaporluTest_CrossBrowser.C02_HardAssert_CrossBrowser"/> <!--C02_HardAssert classını chrome ile calistirir-->
         </classes>
     </test>
 
     <test name="Cross browser edge test">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="tests.day22_RaporluTest.C03_SoftAssert"/> <!--C03_SoftAssert classını edge ile calistirir-->
+            <class name="tests.day22_RaporluTest_CrossBrowser.C03_SoftAssert_CrossBrowser"/> <!--C03_SoftAssert classını edge ile calistirir-->
         </classes>
     </test>
 

@@ -1,0 +1,14 @@
+CrossBrowser Konusu aynı xml dosyasında birden fazla tarayıcı ile belirtilen Classları calistirmaya yarar
+Yani bu classları olusturmada tek amaç xml deki istenilen classı istenilen browser ile çalıştırmak için kullanılır
+
+Burada Utilities package'ine 2 tane class olusturulur:
+    1.TestBaseCross
+    2.CrossDriver  (Driver classının yapptıgını yapar)
+
+    1-xml çalışır
+    2-xml de belirtilen classlara gider
+    3-classlarda before notasyonu varmı onu arar ve yoksa parent classa gider(TestBaseCross)
+    4-Orada before notasyonu vardır ve çalıştırır
+    5-BeforeMethod notasyonunda driver=CrossDriver.getDriver(browser) vardır ve o da CrossDriver classını çalıştırır.
+    6-CrossDriver de aynı Driver classının yaptıgını yapar fakat CrossDriver'de ilk olarak browser parametresinin değerini
+     kontrol edip sonra ona göre calistirir.

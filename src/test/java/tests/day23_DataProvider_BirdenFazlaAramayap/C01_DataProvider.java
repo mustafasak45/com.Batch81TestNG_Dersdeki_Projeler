@@ -1,4 +1,4 @@
-package tests.day23_DataProvider;
+package tests.day23_DataProvider_BirdenFazlaAramayap;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;

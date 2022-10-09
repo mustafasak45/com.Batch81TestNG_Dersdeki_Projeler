@@ -1,4 +1,4 @@
-package tests.day22_RaporluTest;
+package tests.day22_RaporluTest_CrossBrowser;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;

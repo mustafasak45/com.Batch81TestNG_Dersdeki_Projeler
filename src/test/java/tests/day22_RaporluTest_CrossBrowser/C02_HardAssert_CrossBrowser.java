@@ -1,16 +1,16 @@
-package tests.day22_RaporluTest;
+package tests.day22_RaporluTest_CrossBrowser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.ReusableMethods;
-import utilities.TestBaseBeforeMethodAfterMethod;
 import utilities.TestBaseCross;
 
-public class C02_HardAssert extends TestBaseCross {
-    @Test
+public class C02_HardAssert_CrossBrowser extends TestBaseCross {
+    @Test   //test notasyonun özelliği ilk önce before method arar.
+            // Classta olmamasına ragmen Parent classta var oldugu için ordan alır
+
     public void test01() {
         //1-amazon anasayfaya gidin
         driver.get("https://amazon.com");

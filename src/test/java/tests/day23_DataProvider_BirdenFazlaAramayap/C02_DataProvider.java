@@ -1,4 +1,4 @@
-package tests.day23_DataProvider;
+package tests.day23_DataProvider_BirdenFazlaAramayap;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -11,8 +11,10 @@ import utilities.ReusableMethods;
 
 public class C02_DataProvider {
     @DataProvider
-    public static Object[][] aranacakKelimeler() {
-        return new Object[][]{{"mustafa@gmail.com","12345"},{"sak@gmail.com,456545"},{"customer@bluerentalcars.com","12345"}};
+    public static Object[][] kullanicilar() {
+        return new Object[][]{{"mustafa@gmail.com","12345"},
+                                {"sak@gmail.com,456545"},
+                                {"customer@bluerentalcars.com","123456"}};
     }
 
     //https://www.bluerentalcars.com/ adresine git
@@ -21,13 +23,14 @@ public class C02_DataProvider {
     //login butonuna tiklayin
     //Degerleri girildiginde sayfaya basarili sekilde girilemedigini test et
 
-    @Test(dataProvider = "aranacakKelimeler")
+    @Test(dataProvider = "kullanicilar")
     public void test01(String userEmail,String password) {
         //https://www.bluerentalcars.com/ adresine git
+        BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
+
         Driver.getDriver().get(ConfigReader.getProperty("bluerentalCarsUrl"));
 
         //login butonuna bas
-        BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
         blueRentalcarsPage.loginButton.click();
 
         //Data provider ile 3 farklı userEmail ve 3 farklı password girelim
@@ -39,9 +42,10 @@ public class C02_DataProvider {
         blueRentalcarsPage.emailTextbox.sendKeys(userEmail);
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB).sendKeys(password)
-                .perform();
-        blueRentalcarsPage.ikinciLogin.click();
+                .sendKeys(Keys.ENTER).perform();
+    /*    blueRentalcarsPage.ikinciLogin.click();
         ReusableMethods.waitFor(10);
+        */
         //Degerleri girildiginde sayfaya basarili sekilde girilemedigini test et
        // Assert.assertTrue(blueRentalcarsPage.ikinciLogin.isDisplayed());
     }

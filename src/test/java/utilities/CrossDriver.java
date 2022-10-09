@@ -14,7 +14,6 @@ public class CrossDriver {
 
     }
     static WebDriver driver;
-
     public static WebDriver getDriver(String browser) {
         //Eğer browser'a bir değer atanmamışsa properties dosyasın'daki browser çalışsın
         browser = browser == null ? ConfigReader.getProperty("browser") : browser;
@@ -45,8 +44,6 @@ public class CrossDriver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
             }
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
         return driver;
     }

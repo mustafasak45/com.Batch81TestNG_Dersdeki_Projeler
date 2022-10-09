@@ -14,8 +14,8 @@ public class TestBaseCross {
 
     protected  WebDriver driver;
     @Parameters("browser")
-    @BeforeClass
-    public void setUp(@Optional String browser){
+    @BeforeClass        //Parent class bu class oldugu için child classlar ilk buradaki before yi caliştirir
+    public void setUp(@Optional String browser){//@Parameters notasyonundaki değeri buraya almak icin @Optional kullanılır
         driver=CrossDriver.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
