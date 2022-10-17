@@ -3,7 +3,7 @@ package tests.day20_SmokeTest;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.BlueRentalcarsPage;
+import pages.BlueRentACarsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -14,7 +14,7 @@ public class PozitifLoginTest_BulutluOz {
         Driver.getDriver().get(ConfigReader.getProperty("bluerentalCarsUrl"));
 
         //login butonuna bas
-        BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
+        BlueRentACarsPage blueRentalcarsPage=new BlueRentACarsPage();
         blueRentalcarsPage.loginButton.click();
 
         //     emailBlueRentalCars=customer@bluerentalcars.com

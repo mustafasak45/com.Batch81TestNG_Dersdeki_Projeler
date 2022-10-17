@@ -4,7 +4,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.BlueRentalcarsPage;
 import pages.SaucedemoPage;
 import utilities.ConfigReader;
 import utilities.Driver;

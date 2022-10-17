@@ -3,7 +3,7 @@ package tests.day22_RaporluTest_CrossBrowser;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.BlueRentalcarsPage;
+import pages.BlueRentACarsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;
@@ -26,7 +26,7 @@ public class tekrar extends TestBaseRapor {
         Driver.getDriver().get(ConfigReader.getProperty("bluerentalCarsUrl"));
         extentTest.info("Siteye girildi");
 
-        BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
+        BlueRentACarsPage blueRentalcarsPage=new BlueRentACarsPage();
 
         blueRentalcarsPage.loginButton.click();
         extentTest.info("Login butonuna tıklandı");

@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.BlueRentalcarsPage;
+import pages.BlueRentACarsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;
@@ -20,7 +20,7 @@ public class C01_RaporluTest extends TestBaseRapor {
     -Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
      */
 
-    BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
+    BlueRentACarsPage blueRentalcarsPage=new BlueRentACarsPage();
     @Test
     public void test01() {
    //     -https://www.bluerentalcars.com/ adresine git

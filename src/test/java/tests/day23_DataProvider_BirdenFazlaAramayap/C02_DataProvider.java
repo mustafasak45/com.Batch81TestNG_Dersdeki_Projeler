@@ -4,10 +4,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.BlueRentalcarsPage;
+import pages.BlueRentACarsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class C02_DataProvider {
     @DataProvider
@@ -26,7 +25,7 @@ public class C02_DataProvider {
     @Test(dataProvider = "kullanicilar")
     public void test01(String userEmail,String password) {
         //https://www.bluerentalcars.com/ adresine git
-        BlueRentalcarsPage blueRentalcarsPage=new BlueRentalcarsPage();
+        BlueRentACarsPage blueRentalcarsPage=new BlueRentACarsPage();
 
         Driver.getDriver().get(ConfigReader.getProperty("bluerentalCarsUrl"));
 
