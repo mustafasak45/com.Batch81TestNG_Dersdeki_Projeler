@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+  <listeners>
+      <listener class-name="utilities.Listeners"></listener>
+  </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="C:\Users\myComputeR\IdeaProjects\com.Batch81TestNG_Dersdeki_Projeler\src\test\java\tests\ListenersTest1.java">
+        <!--Ust satırdaki adresi ListenerTest1 adında olusturdugumuz clasın yolunu aldık(Absolote path)-->
+        <classes>
+            <class name="tests.ListenersTest1">
+            </class>
+        </classes>
+    </test>
+</suite>
