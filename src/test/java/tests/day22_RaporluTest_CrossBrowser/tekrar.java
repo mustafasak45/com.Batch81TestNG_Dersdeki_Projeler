@@ -21,7 +21,6 @@ public class tekrar extends TestBaseRapor {
 
     @Test
     public void test01() {
-
         extentTest=extentReports.createTest("BlueRentalCars sitesi testi","Kullanıcı adı şifre doğru girilip giriş yapılıması kontrolu");
         Driver.getDriver().get(ConfigReader.getProperty("bluerentalCarsUrl"));
         extentTest.info("Siteye girildi");
@@ -38,7 +37,5 @@ public class tekrar extends TestBaseRapor {
 
         Assert.assertTrue(blueRentalcarsPage.ddm.isDisplayed());
         extentTest.info("Giriş Başarılı");
-
-
     }
 }

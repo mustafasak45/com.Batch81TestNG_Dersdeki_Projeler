@@ -13,7 +13,7 @@ import java.time.Duration;
 public class TestBaseCross {
 
     protected  WebDriver driver;
-    @Parameters("browser")
+    @Parameters("browser") //bu notasyon configuration.properties dosyasındaki browser yazan valuenin değerini alır
     @BeforeClass        //Parent class bu class oldugu için child classlar ilk buradaki before yi caliştirir
     public void setUp(@Optional String browser){//@Parameters notasyonundaki değeri buraya almak icin @Optional kullanılır
         driver=CrossDriver.getDriver(browser);
