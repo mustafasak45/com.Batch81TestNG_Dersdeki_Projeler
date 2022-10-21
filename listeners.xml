@@ -2,13 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-  <listeners>
+  <listeners><!--listeners ları test classlara baglamak icin kullanilir-->
+      <!--       utilities packagesindeki listeners classının path          -->
       <listener class-name="utilities.Listeners"></listener>
   </listeners>
 
     <test verbose="2" preserve-order="true"
           name="C:\Users\myComputeR\IdeaProjects\com.Batch81TestNG_Dersdeki_Projeler\src\test\java\tests\ListenersTest1.java">
-        <!--Ust satırdaki adresi ListenerTest1 adında olusturdugumuz clasın yolunu aldık(Absolote path)-->
+        <!--Ust satırdaki adresi ListenerTest1 adında olusturdugumuz clasın yolunu aldık(Absolote path olarak kopyala)-->
         <classes>
             <class name="tests.ListenersTest1">
             </class>

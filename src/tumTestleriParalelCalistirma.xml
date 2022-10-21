@@ -6,3 +6,8 @@
         </packages>
     </test>
 </suite>
+
+
+        <!--parallel ile paralel test çalıştırılır-->
+        <!--thread-count ile kac tane browser açılacağını belirleriz-->
+        <!--verbose ile verilecek bilginin sayısını belirleriz-->
