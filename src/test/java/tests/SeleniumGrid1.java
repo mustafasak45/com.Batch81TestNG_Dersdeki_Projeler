@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 public class SeleniumGrid1 {
 
@@ -19,7 +20,7 @@ public class SeleniumGrid1 {
     public void test1() throws InterruptedException, MalformedURLException {
         driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444"),new ChromeOptions());
         driver.get("https://www.bluerentalcars.com/");
-        Thread.sleep(3000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         String customerService = driver.findElement(By.xpath("//*[text()='Customer Services']")).getText();
         System.out.println(customerService);
         Thread.sleep(3000);

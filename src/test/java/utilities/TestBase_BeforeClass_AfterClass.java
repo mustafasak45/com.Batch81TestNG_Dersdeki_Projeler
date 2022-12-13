@@ -8,7 +8,7 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class TestBase_BeforeClass_AfterClass {
+public abstract class TestBase_BeforeClass_AfterClass {// obje oluşturulmasını engellemek için abstract yaptık
 
     protected static WebDriver driver;
     @Parameters("browser")

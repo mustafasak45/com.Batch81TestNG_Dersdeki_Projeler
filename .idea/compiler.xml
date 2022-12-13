@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="com.Batch81TestNG_Dersdeki_Projeler" />
         <module name="com.Batch81TestNG" />
       </profile>
     </annotationProcessing>

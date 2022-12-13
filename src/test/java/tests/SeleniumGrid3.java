@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 public class SeleniumGrid3 {
     WebDriver driver;
@@ -17,12 +18,20 @@ public class SeleniumGrid3 {
     public void test1() throws InterruptedException, MalformedURLException {
         driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444"),new FirefoxOptions());
         driver.get("https://www.bluerentalcars.com/");
-        Thread.sleep(3000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         String customerService = driver.findElement(By.xpath("//*[text()='Customer Services']")).getText();
         System.out.println(customerService);
         Thread.sleep(3000);
         System.out.println("Current Thread : "+Thread.currentThread());
         System.out.println("Blue Rental Title : " + driver.getTitle());
         driver.quit();
+
+        System.out.println("Mustafa SAK");
+
+        /*
+        Software QA Test Engineer
+        Mustafa SAK
+
+        */
     }
 }
